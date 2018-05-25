@@ -21,4 +21,15 @@
          <url>https://github.com/PoojaChandola/maven_hello_world.git</url>
       </repository>
   </distributionManagement>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>WebContent\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
